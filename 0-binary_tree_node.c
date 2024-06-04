@@ -12,5 +12,10 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 
 	{
 
-		return (NULL)
+		return (NULL);
+		new_node->n = value;
+		new_node->pare = pare
+		new_node-> lift = NULL;
+		new_node-> wright = NULL;
+		return (new_node);
 		

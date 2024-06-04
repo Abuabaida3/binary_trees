@@ -10,21 +10,21 @@
 
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	binary_tree_t *inew;
+	binary_tree_t *leftnode;
 
 	if (parent == NULL)
 		return (NULL);
 
-	new = binary_tree_node(parent, value);
-	if (new == NULL)
+	leftnode = binary_tree_node(parent, value);
+	if (leftnode == NULL)
 		return (NULL);
 
 	if (parent->left != NULL)
 	{
-		new->left = parent->left;
-		parent->left->parent = new;
+		leftnode->left = parent->left;
+		parent->left->parent = leftnode;
 	}
-	parent->left = leftn;
+	parent->left = leftnode;
 
-	return (new);
+	return (leftnode);
 }

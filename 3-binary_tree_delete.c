@@ -1,6 +1,6 @@
 #include "binary_tree.h"
 /**
- * binary_tree_delete - free an all free using recursion it free node 
+ * binary_tree_delete - tree an entire free using recursion it free node 
  * when the node lift and wright are NULL
  * @tree: tree to free
  * Return: nothing
@@ -22,4 +22,4 @@ void binary_tree_delet(binary_tree_t *tree);
 		}
 		free(tree);
 	}
-}
+

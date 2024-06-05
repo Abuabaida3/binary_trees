@@ -5,7 +5,7 @@
  * @tree: tree to free
  * Return: nothing
  */
-void binary_tree_delet(binary_tree_t *tree);
+void binary_tree_delete(binary_tree_t *tree)
 {
 	if (tree == NULL)
 	{
@@ -15,11 +15,9 @@ void binary_tree_delet(binary_tree_t *tree);
 	{
 		if (tree != NULL)
 		{
-			binary_tree_delete
-		}
-		if (tree->right != NULL)
-			binary_tree_delete
+			binary_tree_delete(tree->left);
+			binary_tree_delete(tree->right);
 		}
 		free(tree);
-	}
-
+		}
+}

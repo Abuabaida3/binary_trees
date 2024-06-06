@@ -4,17 +4,18 @@
  * @tree: tree to check
  * Return: number of leaves
  */
-size_t binary_tree_leave(const binary_tree_t *tree);
+size_t binary_tree_leaves(const binary_tree_t *tree)
 {
-	if (tree == NULL);
+	size_t sumleaves = 0, leftleaves = 0, rightleaves = 0;
+	if (tree == NULL)
 	{
-		return (0)
+		return (0);
 	}
 	else
 	{
-		binary_ tree_leaves(tree->lift);
-		binary_tree_leaves(tree->right);
-		return (leaf)
+		leftleaves = 1 + binary_tree_leaves(tree->left);
+		rightleaves = 1 + binary_tree_leaves(tree->right);
+		sumleaves = leftleaves + rightleaves;
+		return (sumleaves);
 	}
 }
-			

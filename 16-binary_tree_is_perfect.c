@@ -43,10 +43,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	else
 	{
 		final = tree_is_perfect(tree);
-		if (final = 0)
+		if (final != 0)
 		{
-			return (0);
+			return (1);
 		}
-		return (1);
+		return (0);
 	}
 }

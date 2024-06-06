@@ -5,7 +5,7 @@
 * @tree: tree to check
 * Return: number of nodes with children
 */
-size_t binary_nodes(const binary_tree_t *tree)
+size_t binary_tree_nodes(const binary_tree_t *tree)
 {
 
 size_t node = 0;

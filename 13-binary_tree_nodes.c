@@ -1,4 +1,4 @@
-#include "binary_tree.h"
+#include "binary_trees.h"
 /**
 * size_t binary_tree_nodes - fuction
 * that returns of nodes in a tree with children
@@ -21,5 +21,4 @@ node += binary_tree_nodes(tree->lef
 node += binary_tree_nodes(tree->right);
 return (node);
 }
-
-} 
+}
